@@ -1,0 +1,41 @@
+{
+  "name": "backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/backend/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "main": "apps/backend/src/index.ts",
+        "outputPath": "dist/apps/backend",
+        "outputFileName": "index.js",
+        "project": "apps/backend/package.json",
+        "tsConfig": "apps/backend/tsconfig.json",
+        "assets": [],
+        "platform": "node",
+        "dependenciesFieldType": "dependencies",
+        "thirdParty": false,
+        "generatePackageJson": true
+      },
+      "configurations": {
+        "development": {
+          "minify": false
+        },
+        "production": {
+          "minify": true
+        }
+      }
+    },
+    "serve": {
+      "command": "firebase emulators:start --only functions"
+    },
+    "deploy": {
+      "command": "firebase deploy --only functions"
+    }
+  },
+  "tags": []
+}
+
