@@ -1,10 +1,10 @@
-# InsightRank 🚀
+# InsightRank 
 
 **AI-Powered Developer Assessment Tool**
 
 InsightRank is a focused, AI-powered tool designed to instantly transform any public developer profile (e.g., GitHub) into a comprehensive, structured technical evaluation. Built with the Google Genkit framework, it automates the time-consuming process of technical screening, providing recruiters, hiring managers, and investors with immediate, deep insight into a developer's quality of work, focus areas, and potential team fit.
 
-## 💡 Business Value: Speed and Depth in Developer Screening
+##  Business Value: Speed and Depth in Developer Screening
 
 InsightRank serves as an **AI Recruiter's Co-Pilot**, offering immediate, objective analysis:
 
@@ -12,11 +12,11 @@ InsightRank serves as an **AI Recruiter's Co-Pilot**, offering immediate, object
 - **For Hiring Managers**: Provides objective, structured talking points for interviews, focusing on specific contributions highlighted by the AI
 - **For Investors**: Quickly assess technical teams and individual contributors' capabilities
 
-### 🎯 Unique Selling Point (USP)
+###  Unique Selling Point (USP)
 
 Traditional screeners use metrics (lines of code). **InsightRank uses AI-powered qualitative judgment** to assess the impact and quality of those contributions, not just the volume.
 
-## ✨ Core Feature: The Instant Profile Review Flow
+##  Core Feature: The Instant Profile Review Flow
 
 The entire application is dedicated to one, powerful smart workflow—the on-demand analysis of any single profile.
 
@@ -27,7 +27,7 @@ The entire application is dedicated to one, powerful smart workflow—the on-dem
 | 3. AI Analysis & Structuring | Genkit generate with Structured Output (Zod Schema): The raw data is passed to the Gemini LLM. The LLM is forced to output a JSON object adhering to a strict schema | The final, human-readable, and highly structured technical review, ready for interview prep |
 | 4. Delivery | An instant web view or simple JSON API response containing the full AI-generated review | Immediate utility for the end-user (recruiter) |
 
-## 🏗️ Technical Architecture
+##  Technical Architecture
 
 ### Tech Stack
 - **Framework**: Google Genkit (TypeScript SDK)
@@ -44,7 +44,7 @@ The entire application is dedicated to one, powerful smart workflow—the on-dem
 - **Structured Output**: Guarantees that the human-readable analysis is always predictable and machine-parsable
 - **Observability**: The Genkit Developer UI is central to debugging and proving the flow's logic and latency
 
-## 📊 Example Output Structure
+##  Example Output Structure
 
 The AI Review is a single, structured object that focuses on constructive evaluation:
 
@@ -73,7 +73,7 @@ The AI Review is a single, structured object that focuses on constructive evalua
 }
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -155,7 +155,7 @@ The AI Review is a single, structured object that focuses on constructive evalua
    - Best Contribution Highlight
    - Interview Questions
 
-## 🛠️ Development
+##  Development
 
 ### Project Structure
 
@@ -191,7 +191,7 @@ pnpm nx test
 pnpm nx lint
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -209,7 +209,7 @@ The Firebase configuration includes:
 - Environment variables for API keys
 - Single project mode for local development
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -241,14 +241,14 @@ firebase emulators:start --only functions --debug
 pnpm nx serve frontend --verbose
 ```
 
-## 📈 Performance
+##  Performance
 
 - **Analysis Time**: Typically 15-30 seconds per developer
 - **API Rate Limits**: Respects GitHub API rate limits
 - **Concurrent Requests**: Supports multiple simultaneous analyses
 - **Caching**: Results are not cached (each analysis is fresh)
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -256,11 +256,11 @@ pnpm nx serve frontend --verbose
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Built with [Google Genkit](https://firebase.google.com/docs/genkit)
 - Powered by [Gemini AI](https://ai.google.dev/)
